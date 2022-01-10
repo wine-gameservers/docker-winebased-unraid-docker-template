@@ -4,7 +4,7 @@
   <Beta>False</Beta>
   <Category>GameServer</Category>
   <Name>Farming Simulator 22 Server</Name>
-  <Project>https://github.com/wine-gameservers/docker-winebased-server-fs22</Project>
+  <Project>https://github.com/wine-gameservers/docker-winebased-unraid-docker-template</Project>
   <Changes>
 [center][img width='155px' src='https://raw.githubusercontent.com/wine-gameservers/docker-winebased-server-fs22/main/misc/fs22_top_logo.png'][/center]
 
