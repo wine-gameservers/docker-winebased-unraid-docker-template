@@ -1,27 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Container version="2">
-  <Date>2022-01-10</Date>
-  <Beta>False</Beta>
-  <Category>GameServer</Category>
   <Name>fs22server</Name>
-  <Project>https://github.com/wine-gameservers/docker-winebased-unraid-docker-template</Project>
-  <Overview>
-    The Farming Simulator 22 server, farm with friends!
-  </Overview>
-  <Description>
-    Running the Farming Simulator 22 Server on UnRaid!
-  </Description>
-  <Registry>https://registry.hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
-  <GitHub>https://github.com/wine-gameservers/docker-winebased-server-fs22</GitHub>
-  <Repository>toetje585/docker-winebased-server-fs22</Repository>
-  <Support>https://discord.gg/XQrmZskTs8</Support>
-  <BindTime>true</BindTime>
+  <Repository>https://github.com/wine-gameservers/docker-winebased-server-fs22</Repository>
+  <Registry>https://hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>latest</TagDescription>
+    <Repository>https://github.com/wine-gameservers/docker-winebased-server-fs22:main</Repository>
+    <Registry>https://hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
+  </Branch>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-  </Networking>
-  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <Banner></Banner>
+  <Support>https://discord.gg/XQrmZskTs8</Support>
+  <Project>https://github.com/wine-gameservers</Project>
+  <Category>Other:</Category>
+  <TemplateURL>false</TemplateURL>
+  <Icon>http://www.farmingsimulator19mods.com/wp-content/uploads/2021/11/FS22-mods-1.png</Icon>
+  <Overview>The Farming Simulator 22 server, farm with friends!</Overview>
+  <Description/>
+  <MyIP/>
+  <WebUI/>
+  <ExtraParams/>
+  <PostArgs/>
+  <Network>bridge</Network>
   <Config Name="Server Installer" Target="/opt/fs22/installer" Default="" Mode="rw" Description="This directory contains the farming simulator 22 installer! Downloaded from https://eshop.giants-software.com/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/installer</Config>
   <Config Name="config" Target="/opt/fs22/config" Default="" Mode="rw" Description="This directory contains the content of " Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/config</Config>
   <Config Name="game installation path" Target="/opt/fs22/game" Default="" Mode="rw" Description="This directory contains the installed game, it survives docker image updates, hence it only needs to be installed once!" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/game</Config>
@@ -45,5 +46,4 @@
   <Config Name="SERVER_SAVE_INTERVAL" Target="SERVER_SAVE_INTERVAL" Default="180.000000" Mode="" Description="Save the game each180 seconds!" Type="Variable" Display="always" Required="false" Mask="false">180000000</Config>
   <Config Name="SERVER_STATS_INTERVAL" Target="SERVER_STATS_INTERVAL" Default="31536000" Mode="" Description="Default: 120.000000, webapi is not supported anymore for FS22 so lets give it an odd number so it doesen't spam the logs!&#13;&#10;&#13;&#10;Stupid devs." Type="Variable" Display="always" Required="false" Mask="false">31536000</Config>
   <Config Name="SERVER_CROSSPLAY" Target="SERVER_CROSSPLAY" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Icon>http://www.farmingsimulator19mods.com/wp-content/uploads/2021/11/FS22-mods-1.png</Icon>
 </Container>
