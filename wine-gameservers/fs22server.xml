@@ -4,7 +4,7 @@
   <Repository>toetje585/docker-winebased-server-fs22</Repository>
   <Registry>https://registry.hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
   <Shell>bash</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://discord.gg/XQrmZskTs8</Support>
   <Project>https://github.com/wine-gameservers</Project>
   <Category>Other:</Category>
