@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container version="2">
   <Date>2022-01-10</Date>
   <Beta>False</Beta>
   <Category>GameServer</Category>
@@ -54,4 +54,4 @@
   <Config Name="SERVER_STATS_INTERVAL" Target="SERVER_STATS_INTERVAL" Default="31536000" Mode="" Description="Default: 120.000000, webapi is not supported anymore for FS22 so lets give it an odd number so it doesen't spam the logs!&#13;&#10;&#13;&#10;Stupid devs." Type="Variable" Display="always" Required="false" Mask="false">31536000</Config>
   <Config Name="SERVER_CROSSPLAY" Target="SERVER_CROSSPLAY" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Icon>http://www.farmingsimulator19mods.com/wp-content/uploads/2021/11/FS22-mods-1.png</Icon>
-</Containers>
+</Container>
