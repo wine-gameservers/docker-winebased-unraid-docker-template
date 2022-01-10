@@ -39,7 +39,7 @@
   <Config Name="SERVER_MAP" Target="SERVER_MAP" Default="MapUS" Mode="" Description="Default: MapUS (Elmcreek), other official maps are: MapFR (Haut-Beyleron), MapAlpine (Erlengrat)" Type="Variable" Display="always" Required="false" Mask="false">MapUS</Config>
   <Config Name="SERVER_DIFFICULTY" Target="SERVER_DIFFICULTY" Default="3" Mode="" Description="Default: 3, start from scratch" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
   <Config Name="SERVER_PAUSE" Target="SERVER_PAUSE" Default="2" Mode="" Description="Default: 2 Pause the server if no players are connected 1, never pause the server" Type="Variable" Display="always" Required="false" Mask="false">2</Config>
-  <Config Name="SERVER_SAVE_INTERVAL" Target="SERVER_SAVE_INTERVAL" Default="180.000000" Mode="" Description="Save the game each180 seconds!" Type="Variable" Display="always" Required="false" Mask="false">180000000</Config>
+  <Config Name="SERVER_SAVE_INTERVAL" Target="SERVER_SAVE_INTERVAL" Default="180.000000" Mode="" Description="Save the game each180 seconds!" Type="Variable" Display="always" Required="false" Mask="false">180.000000</Config>
   <Config Name="SERVER_STATS_INTERVAL" Target="SERVER_STATS_INTERVAL" Default="31536000" Mode="" Description="Default: 120.000000, webapi is not supported anymore for FS22 so lets give it an odd number so it doesen't spam the logs!&#13;&#10;&#13;&#10;Stupid devs." Type="Variable" Display="always" Required="false" Mask="false">31536000</Config>
   <Config Name="SERVER_CROSSPLAY" Target="SERVER_CROSSPLAY" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
 </Container>
