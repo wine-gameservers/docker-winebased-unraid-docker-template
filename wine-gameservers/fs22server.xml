@@ -5,14 +5,6 @@
   <Category>GameServer</Category>
   <Name>fs22server</Name>
   <Project>https://github.com/wine-gameservers/docker-winebased-unraid-docker-template</Project>
-  <Changes>
-[center][img width='155px' src='https://raw.githubusercontent.com/wine-gameservers/docker-winebased-server-fs22/main/misc/fs22_top_logo.png'][/center]
-
-[center][font size=4]FS22 Server Change Log[/font][/center]
-
-[font size=3]2022.01.10[/font]
-- Initial Release many thanks to Aussie Farmer!
-  </Changes>
   <Overview>
     The Farming Simulator 22 server, farm with friends!
   </Overview>
