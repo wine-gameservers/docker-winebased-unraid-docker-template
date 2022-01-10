@@ -3,12 +3,6 @@
   <Name>fs22server</Name>
   <Repository>https://github.com/wine-gameservers/docker-winebased-server-fs22</Repository>
   <Registry>https://hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
-  <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>latest</TagDescription>
-    <Repository>https://github.com/wine-gameservers/docker-winebased-server-fs22:main</Repository>
-    <Registry>https://hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
-  </Branch>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://discord.gg/XQrmZskTs8</Support>
