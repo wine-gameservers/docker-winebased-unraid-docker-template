@@ -17,7 +17,7 @@
     The Farming Simulator 22 server, farm with friends!
   </Overview>
   <Description>
-    Running the Farming Simulator 22 Server on UnRaid!
+    Running the farming simulator 22 server on UnRaid!
   </Description>
   <Registry>https://registry.hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
   <GitHub>https://github.com/wine-gameservers/docker-winebased-server-fs22</GitHub>
