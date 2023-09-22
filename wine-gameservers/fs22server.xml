@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>fs22server</Name>
-  <Repository>toetje585/docker-winebased-server-fs22</Repository>
-  <Registry>https://registry.hub.docker.com/r/toetje585/docker-winebased-server-fs22</Registry>
+  <Repository>toetje585/arch-wine-fs22</Repository>
+  <Registry>https://registry.hub.docker.com/r/toetje585/arch-wine-fs22</Registry>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
   <Support>https://discord.gg/XQrmZskTs8</Support>
@@ -20,9 +20,9 @@
   <Config Name="Server Installer" Target="/opt/fs22/installer" Default="" Mode="rw" Description="This directory contains the farming simulator 22 installer! Downloaded from https://eshop.giants-software.com/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/installer</Config>
   <Config Name="config" Target="/opt/fs22/config" Default="" Mode="rw" Description="This directory contains the content of " Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/config</Config>
   <Config Name="game installation path" Target="/opt/fs22/game" Default="" Mode="rw" Description="This directory contains the installed game, it survives docker image updates, hence it only needs to be installed once!" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/game</Config>
+  <Config Name="DLC installation path" Target="/opt/fs22/dlc" Default="" Mode="rw" Description="This directory contains the dlc installers." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/dlc</Config>
   <Config Name="VNC Viewer" Target="5900" Default="" Mode="tcp" Description="This is the port used to connect to the VNC Server, you can use tools like vnc viewer to do so!" Type="Port" Display="always" Required="false" Mask="false">5900</Config>
   <Config Name="Farming Simulator 22 admin panel" Target="8080" Default="" Mode="tcp" Description="This the port used for the Farming Simulator 22 admin panel, once the server is running you can acces this port to configure your personal farming server!" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
-  <Config Name="VNC Web Server" Target="9000" Default="" Mode="tcp" Description="This is the port used for the VNC webserver, you can acces the server vnc web client by browsing towards this port, this is usefull if you don't use a VNC program to acces the vnc server but just like to use an browser!" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
   <Config Name="Gameserver TCP Port" Target="10823" Default="" Mode="tcp" Description="This is the TCP port used for the gameserver, it allows you and other people to connect to the server and thus farm togheter!" Type="Port" Display="always" Required="false" Mask="false">10823</Config>
   <Config Name="Gameserver UDP Port" Target="10823" Default="" Mode="udp" Description="This is the UDP port used for the gameserver, it allows you and other people to connect to the server and thus farm togheter!" Type="Port" Display="always" Required="false" Mask="false">10823</Config>
   <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="This is the username used inside the docker container." Type="Variable" Display="always" Required="false" Mask="false">FS22SERVER</Config>
