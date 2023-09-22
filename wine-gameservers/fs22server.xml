@@ -4,7 +4,7 @@
   <Repository>toetje585/arch-wine-fs22</Repository>
   <Registry>https://registry.hub.docker.com/r/toetje585/arch-wine-fs22</Registry>
   <Shell>bash</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://discord.gg/XQrmZskTs8</Support>
   <Project>https://github.com/wine-gameservers</Project>
   <Category>Other:</Category>
@@ -17,6 +17,8 @@
   <ExtraParams/>
   <PostArgs/>
   <Network>bridge</Network>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID from User." Type="Variable" Display="always" Required="false" Mask="false">PUID</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID from User." Type="Variable" Display="always" Required="false" Mask="false">PGID</Config>
   <Config Name="Server Installer" Target="/opt/fs22/installer" Default="" Mode="rw" Description="This directory contains the farming simulator 22 installer! Downloaded from https://eshop.giants-software.com/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/installer</Config>
   <Config Name="config" Target="/opt/fs22/config" Default="" Mode="rw" Description="This directory contains the content of " Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/config</Config>
   <Config Name="game installation path" Target="/opt/fs22/game" Default="" Mode="rw" Description="This directory contains the installed game, it survives docker image updates, hence it only needs to be installed once!" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/game</Config>
