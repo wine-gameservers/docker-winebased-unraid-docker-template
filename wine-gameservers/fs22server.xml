@@ -41,4 +41,14 @@
   <Config Name="SERVER_SAVE_INTERVAL" Target="SERVER_SAVE_INTERVAL" Default="180.000000" Mode="" Description="Save the game each180 seconds!" Type="Variable" Display="always" Required="false" Mask="false">180.000000</Config>
   <Config Name="SERVER_STATS_INTERVAL" Target="SERVER_STATS_INTERVAL" Default="31536000" Mode="" Description="Default: 120.000000, webapi is not supported anymore for FS22 so lets give it an odd number so it doesen't spam the logs!&#13;&#10;&#13;&#10;Stupid devs." Type="Variable" Display="always" Required="false" Mask="false">31536000</Config>
   <Config Name="SERVER_CROSSPLAY" Target="SERVER_CROSSPLAY" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+    </Variable>
+  </Environment>
 </Container>
