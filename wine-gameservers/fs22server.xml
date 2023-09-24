@@ -17,8 +17,6 @@
   <ExtraParams/>
   <PostArgs/>
   <Network>bridge</Network>
-  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID from User." Type="Variable" Display="always" Required="false" Mask="false">PUID</Config>
-  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID from User." Type="Variable" Display="always" Required="false" Mask="false">PGID</Config>
   <Config Name="Server Installer" Target="/opt/fs22/installer" Default="" Mode="rw" Description="This directory contains the farming simulator 22 installer! Downloaded from https://eshop.giants-software.com/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/installer</Config>
   <Config Name="config" Target="/opt/fs22/config" Default="" Mode="rw" Description="This directory contains the content of " Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/config</Config>
   <Config Name="game installation path" Target="/opt/fs22/game" Default="" Mode="rw" Description="This directory contains the installed game, it survives docker image updates, hence it only needs to be installed once!" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs22server/game</Config>
@@ -29,7 +27,6 @@
   <Config Name="Gameserver UDP Port" Target="10823" Default="" Mode="udp" Description="This is the UDP port used for the gameserver, it allows you and other people to connect to the server and thus farm togheter!" Type="Port" Display="always" Required="false" Mask="false">10823</Config>
   <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="This is the username used inside the docker container." Type="Variable" Display="always" Required="false" Mask="false">FS22SERVER</Config>
   <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="FS22SERVER" Mode="" Description="We need to secure the VNC server, let us login with a password!" Type="Variable" Display="always" Required="false" Mask="false">FS22SERVER</Config>
-  <Config Name="RESOLUTION" Target="RESOLUTION" Default="1280x720" Mode="" Description="This is the RESOLUTION used for the VNC Client, so if you connect to the vnc server you will get an awesome 720p window!" Type="Variable" Display="always" Required="false" Mask="false">1280x720</Config>
   <Config Name="SERVER_NAME" Target="SERVER_NAME" Default="FS22 Docker Server" Mode="" Description="We can pre-configure the Farming Simulator 22 server name!" Type="Variable" Display="always" Required="false" Mask="false">FS22 Docker Server</Config>
   <Config Name="WEB_USERNAME" Target="WEB_USERNAME" Default="FS22USER" Mode="" Description="FS22 Webadmin portal username!" Type="Variable" Display="always" Required="false" Mask="false">FS22USER</Config>
   <Config Name="WEB_PASSWORD" Target="WEB_PASSWORD" Default="FS22USER" Mode="" Description="FS22 Webadmin portal password" Type="Variable" Display="always" Required="false" Mask="false">FS22USER</Config>
