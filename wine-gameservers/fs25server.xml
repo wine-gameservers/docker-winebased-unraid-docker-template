@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>fs25server</Name>
+  <Repository>toetje585/arch-fs25server</Repository>
+  <Registry>https://registry.hub.docker.com/r/toetje585/arch-fs25server</Registry>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/XQrmZskTs8</Support>
+  <Project>https://github.com/wine-gameservers</Project>
+  <Category>Other:</Category>
+  <TemplateURL>false</TemplateURL>
+  <Icon>http://www.farmingsimulator19mods.com/wp-content/uploads/2016/08/fs25-mods.png</Icon>
+  <Overview>The Farming Simulator 25 server, farm with friends!</Overview>
+  <Description/>
+  <MyIP/>
+  <WebUI/>
+  <ExtraParams/>
+  <PostArgs/>
+  <Network>bridge</Network>
+  <Config Name="Server Installer" Target="/opt/fs25/installer" Default="" Mode="rw" Description="This directory contains the farming simulator 25 installer! Downloaded from https://eshop.giants-software.com/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs25server/installer</Config>
+  <Config Name="config" Target="/opt/fs25/config" Default="" Mode="rw" Description="This directory contains the content of " Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs25server/config</Config>
+  <Config Name="game installation path" Target="/opt/fs25/game" Default="" Mode="rw" Description="This directory contains the installed game, it survives docker image updates, hence it only needs to be installed once!" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs25server/game</Config>
+  <Config Name="DLC installation path" Target="/opt/fs25/dlc" Default="" Mode="rw" Description="This directory contains the dlc installers." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fs25server/dlc</Config>
+  <Config Name="VNC Viewer" Target="5900" Default="" Mode="tcp" Description="This is the port used to connect to the VNC Server, you can use tools like vnc viewer to do so!" Type="Port" Display="always" Required="false" Mask="false">5900</Config>
+  <Config Name="Farming Simulator 25 admin panel" Target="8080" Default="" Mode="tcp" Description="This the port used for the Farming Simulator 25 admin panel, once the server is running you can acces this port to configure your personal farming server!" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Gameserver TCP Port" Target="10823" Default="" Mode="tcp" Description="This is the TCP port used for the gameserver, it allows you and other people to connect to the server and thus farm togheter!" Type="Port" Display="always" Required="false" Mask="false">10823</Config>
+  <Config Name="Gameserver UDP Port" Target="10823" Default="" Mode="udp" Description="This is the UDP port used for the gameserver, it allows you and other people to connect to the server and thus farm togheter!" Type="Port" Display="always" Required="false" Mask="false">10823</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="This is the username used inside the docker container." Type="Variable" Display="always" Required="false" Mask="false">FS25SERVER</Config>
+  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="FS25SERVER" Mode="" Description="We need to secure the VNC server, let us login with a password!" Type="Variable" Display="always" Required="false" Mask="false">FS25SERVER</Config>
+  <Config Name="WEB_USERNAME" Target="WEB_USERNAME" Default="FS25USER" Mode="" Description="FS25 Webadmin portal username!" Type="Variable" Display="always" Required="false" Mask="false">FS25USER</Config>
+  <Config Name="WEB_PASSWORD" Target="WEB_PASSWORD" Default="FS25USER" Mode="" Description="FS25 Webadmin portal password" Type="Variable" Display="always" Required="false" Mask="false">FS25USER</Config>
+  <Config Name="SERVER_PORT" Target="SERVER_PORT" Default="10823" Mode="" Description="This is the port for the game server, don't change it unless you know what you are doing!" Type="Variable" Display="always" Required="false" Mask="false">10823</Config>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+    </Variable>
+  </Environment>
+</Container>
